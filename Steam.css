@@ -264,6 +264,7 @@
 		position: absolute;
 		top: 36px;
 		left: 0;
+		z-index: 1;
 		width: 135px;
 		height: 135px;
 		background-color: #c7d5e0;
@@ -297,8 +298,9 @@
 		position: absolute;
 		top: 36px;
 		left: 0;
+		z-index: 1;
 		width: 145px;
-		height: 623px;
+		height: 630px;
 		background-color: #c7d5e0;
 		display: none;
 		box-shadow: 0 0 12px #000;
@@ -335,6 +337,7 @@
 		position: absolute;
 		top: 36px;
 		left: 0;
+		z-index: 1;
 		width: 135px;
 		height: 325px;
 		background-color: #c7d5e0;
@@ -368,6 +371,7 @@
 		position: absolute;
 		top: 36px;
 		left: 0;
+		z-index: 1;
 		width: 135px;
 		height: 135px;
 		background-color: #c7d5e0;
@@ -396,6 +400,7 @@
 		position: absolute;
 		top: 36px;
 		left: 0;
+		z-index: 1;
 		width: 145px;
 		height: 475px;
 		background-color: #c7d5e0;
@@ -481,7 +486,7 @@
 	}
 	.home_cluster_ctnhome_ctn{
 		display: inline-block;
-		margin-top: 30px;
+		margin-top: 45px;
 	}
 	.home_pagecontent{
 		position: relative;
@@ -490,7 +495,181 @@
 	    margin: 0 auto;
 	}
 	.home_pagecontent h2{
+		margin-bottom: 10px;
 		color: #ffffff;
 		font-size: 20px;
 		margin-left: 5px;
+		font-weight: normal;
+	}
+	.home_maincap{
+		width: 940px;
+		position: absolute;
+    	right: 20px;
+		height: 355px;
+	    box-shadow: 0 0 7px 0px #000;
+	    display: none;
+	}
+	.home_maincap.show{
+		display: block;
+	}
+	.itemshidden{
+		flex-shrink: 0;
+	    background-color: #000;
+	    position: relative;
+	    margin-right: 10px;
+	    width: 616px;
+	    height: 353px;
+	    background-position: center center;
+	    background-size: cover;
+	    box-shadow: 0 0 10px 5px #000;
+	}
+	.itemshidden a{
+		position: absolute;
+	}
+	.carousel_thumbs{
+		text-align: center;
+	}
+	.carousel_thumbs span{
+		display: inline-block;
+	    margin: 12px 2px;
+	    width: 15px;
+	    height: 9px;
+	    border-radius: 2px;
+	    transition: background-color 0.2s;
+	    background-color: hsla(202,60%,100%,0.2);
+	    cursor: pointer;
+	}
+	.carousel_thumbs span:hover{
+		 background-color: hsla(202,60%,100%,0.4);
+	}
+	#buttonleft{
+		position: absolute;
+		top: 142%;
+    	left: 217px;;
+		background-color: rgba(0,0,0,0.3);	   
+	    width: 23px;
+	    height: 36px;
+	    padding: 36px 11px;
+	    cursor: pointer;
+	    z-index: 3;
+	    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,
+	    rgba( 0, 0, 0, 0) 95%);
+	}
+	#buttonright{
+		position:absolute;
+		top: 135%;
+    	right: -25px; 
+		background-color: rgba(0,0,0,0.3);	   
+	    width: 23px;
+	    height: 36px;
+	    padding: 36px 11px;
+	    cursor: pointer;
+	    z-index: 3;
+	    background: linear-gradient( to left, rgba( 0, 0, 0, 0.3) 5%,
+	    rgba( 0, 0, 0, 0) 95%)
+	}
+	#buttonright:hover{
+		background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,
+		    rgba( 171, 218, 244, 0) 95%);
+	}
+	#buttonleft:hover{
+		    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,
+		    rgba( 171, 218, 244, 0) 95%);
+	}
+	.info{
+		width: 323px;
+		position: absolute;
+		right: 1px;
+    	top: -1px;
+		height: 356px;
+		background-image: url(images/background_maincap_2.jpg);
+		overflow: hidden;
+	}
+	.info .app_name{
+		cursor: pointer;
+		color: #fff	;
+		font-size: 24px;	
+		padding-top: 10px;
+	    font-family: "Motiva Sans", Sans-serif;
+	    font-weight: 300;
+	    height: 50px;
+	    padding-left: 6px;
+	    padding-right: 6px;
+	}
+	.screenshots{
+		width: 344px;
+	    display: inline-block;
+	    margin-left: -23px;
+	    max-height: 176px;
+	    position: relative;
+	}
+	.screenshots a{
+		width: 162px;
+	    height: 69px;
+	    display: inline-block;
+	    padding-right: 7px;
+	    padding-top: 5px;
+	}
+	.screenshots img{
+		width: 165px;
+		height: 79px;
+		opacity: 0.7;
+	}
+	.screenshots img:hover{
+		opacity: 1;
+	}
+	.info .reason{
+		margin-top: 8px;
+	    padding-left: 10px;
+	    display: inline-block;
+	    width: 298px;
+	    color:#ffffff;
+	}
+	.info .reason .maindefault{
+		cursor: pointer;
+		font-size: 21px;
+	    font-weight: 200;
+	    min-height: auto;
+	    padding-right: 10px;
+    	padding-top: 6px;
+	}
+	.reason .additional{
+		margin-top: 5px;
+    	font-size: 14px;
+	}
+	.reason .additional > div{
+		margin: 3px 0;
+	    display: inline-block;
+	    line-height: 19px;
+	    padding: 0 7px;
+	    background-color: rgba( 255, 255, 255, 0.2 );
+	    box-shadow: none;
+	    margin-right: 2px;
+	    border-radius: 2px;
+	    cursor: pointer;
+	    margin-bottom: 3px;
+	    max-width: 200px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    font-size: 11px;
+	}
+	.final_price{
+		color: #acdbf5;
+		font-size: 11px;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+	.platforms{
+		position: absolute;
+	    bottom: 10px;
+	    right: 16px;
+	    opacity: 0.7;
+	}
+	.platforms .platform_img{
+		background-image: url(images/icon_platform_win.png);
+		display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    background-repeat: no-repeat;
 	}
